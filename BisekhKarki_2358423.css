@@ -1,0 +1,310 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-image: url('./BisekhKarki_2358423.jpg');
+    background-position: center;
+    background-size: cover;
+    
+    height: 100vh;
+
+}
+.main-container{
+    border: solid 2px black;
+    backdrop-filter: blur(1px);
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(249, 249, 249);
+    background: linear-gradient(rgba(14, 14,14, 0.4),rgba(14, 14, 14, 0.4)50%);
+    border-radius: 20px;
+    width: 30%;
+    padding: 50px;
+    position: absolute;
+    top: 3%;
+    left: 30%;
+
+}
+span{
+    font-size: 1.8rem;
+}
+.description{
+    font-size: 2rem;
+}
+#search{
+    width: 80%;
+    padding: 13px;
+    border-radius: 7px;
+    background-color: bisque;
+    color: black;
+}
+#btn{
+    padding: 13px;
+    border-radius: 6px;
+    background-color: bisque;
+    color: black;
+
+}
+.weather-details img{
+    width: 145px;
+
+}
+
+.past{
+    background-color: rgb(179, 130, 40);
+    padding: 10px;
+    font-size: 20px;
+    border: 5px wheat;
+    border-radius: 5px;
+    color: aliceblue;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.past:hover{
+    background-color:black;
+    color:white;
+    transition: 1s ;
+    
+}
+/* Style for the container of past weather data boxes */
+.bef {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 70px;
+    overflow: auto;
+}
+
+/* Style for each past weather data box */
+.past-weather-box {
+    overflow: auto;
+    background-color: rgba(9, 1, 1, 0.9);
+    padding: 20px;
+    border-radius: 18px;
+    margin-bottom: 20px;
+    width: calc(65% - 20px); /* Adjust the width based on your layout */
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the content inside each past weather data box */
+.past-weather-content {
+    color: #fff;
+}
+
+/* Style for the headers inside past weather data boxes */
+.past-weather-content h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Style for the individual weather data entries */
+.past-weather-content p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+@media (max-width:1400px){
+    .main-container{
+        font-size: 1.3rem;
+        position: absolute;
+        top: 3%;
+        left: 30%;
+    
+    }
+    #search{
+        width: 80%;
+        padding: 13px;
+        border-radius: 7px;
+    }
+    #btn{
+        padding: 13px;
+        border-radius: 5px;
+    
+    }
+    .weather-details img{
+        width: 100px;
+    
+    }
+    span{
+        font-size: 1.5rem;
+    }
+    .description{
+        font-size: 1.7rem;
+    }
+}
+@media (max-width:1310px){
+  
+    .main-container{
+        font-size: 1.2rem;
+        width: 40%;
+    }
+    #search{
+        width: 70%;
+        padding: 13px;
+        border-radius: 7px;
+    }
+    #btn{
+        padding: 12px;
+        border-radius: 5px;
+    
+    }
+    .weather-details img{
+        width: 150px;
+    
+    }
+}
+@media (max-width:1360px){
+  
+    
+    #search{
+        width: 70%;
+        padding: 13px;
+        border-radius: 7px;
+    }
+    
+}
+@media (max-width:900px){
+   
+    .main-container{
+        font-size: 1.2rem;
+        width: 50%;
+    }
+    #search{
+        width: 70%;
+        padding: 13px;
+        border-radius: 7px;
+    }
+    #btn{
+        padding: 12px;
+        border-radius: 5px;
+    
+    }
+    
+}
+@media (max-width:740px){
+   
+    .main-container{
+        
+        position: absolute;
+        top: 10%;
+        left: 22%;
+    }
+    #search{
+        width: 60%;
+        padding: 10px;
+        border-radius: 7px;
+    }
+    #btn{
+        padding: 10px;
+        border-radius: 5px;
+    
+    }
+    
+}
+@media (max-width:710px){
+   
+    .city{
+        font-size: 1.7rem;
+       
+    }
+}
+@media (max-width:650px){
+   
+    .main-container{
+        font-size: 1rem;
+        position: absolute;
+        top: 10%;
+        left: 22%;
+    }
+}
+@media (max-width:600px){
+   
+    .city{
+        font-size: 1.7rem;
+       
+    }
+}
+
+@media (max-width:480px){
+   
+    .main-container{
+        position: absolute;
+        top: 12%;
+        left: 15%
+    }
+    #search{
+        width: 70%;
+        padding: 2px;
+        border-radius: 7px;
+    }
+    #btn{
+        padding: 3px;
+        border-radius: 5px;
+    
+    }
+    .weather-details img{
+        width: 100px;
+    
+    }
+}
+@media (max-width:510px){
+    .city{
+        font-size: 1.5rem;
+       
+    }
+}
+@media (max-width:495px){
+    .city{
+        font-size: 1.5rem;
+       
+    }
+}
+@media (max-width:460px){
+    .city{
+        font-size: 1.3rem;
+       
+    }
+}
+@media (max-width:450px){
+   
+    .main-container{
+        font-size: 0.8rem;
+        position: absolute;
+        top: 15%;
+        left: 15%
+    }
+    #search{
+        width: 70%;
+        padding: 2px;
+        border-radius: 7px;
+    }
+    #btn{
+        padding: 3px;
+        border-radius: 5px;
+    
+    }
+    
+}
+@media (max-width:440px){
+   
+    .main-container{
+        font-size: 0.5rem;
+        position: absolute;
+        top: 15%;
+        left: 15%
+    }
+    #search{
+        width: 50%;
+        padding: 3px;
+        
+    }
+    #btn{
+        padding: 2px;
+        border-radius: 5px;
+    
+    }
+    h2{
+        font-size: 1.3rem;
+    }
+    
+}
